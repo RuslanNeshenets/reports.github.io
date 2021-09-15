@@ -3,7 +3,6 @@ $(document).ready(function () {
 		let lab = $(this).attr('id');
 
 		let display = $(`.${lab}`).attr('style');
-		console.log(display);
 
 		if(display!=='display: block;'){
 			$('.labs > div').hide();
@@ -13,5 +12,16 @@ $(document).ready(function () {
 			$(`.${lab}`).slideToggle(500);
 		}
 		event.preventDefault();
+	});
+
+	//Лаб №1
+	$('.work__structure__1 a:nth-child(n+2)').click(function(event){
+		let text = $(this).children().html();
+		let img = $(this).children('img').attr('src');
+		$('.work__info').html(`${text}<img src="${img}">`);
+		if($('.work__info img').attr('src') != 'undefined'
+			&& $('.work__info img').attr('src').length != 0){
+			$('.work__info img').show();
+		}
 	});
 });

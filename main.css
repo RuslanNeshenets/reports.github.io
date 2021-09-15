@@ -40,13 +40,13 @@ body{
 	height: 463px;
 	display: flex;
 }
-.work__structure{	
+.work__structure__1{	
 	width: 25%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
-.work__structure a{
+.work__structure__1 a{
 	display: flex;
 	height: 50px;
 	width: 70%;
@@ -61,12 +61,18 @@ body{
 	font-weight: bold;
 	padding: 0 15px;
 }
-.work__structure a:first-child{
+.work__structure__1 a:first-child{
 	margin-top: 0;
 }
-.work__structure .subparagraph{
+.work__structure__1 .subparagraph{
 	width: 50%;
 	height: 40px;
+}
+.work__structure__1 p{
+	display: none;
+}
+.work__structure__1 img{
+	display: none;
 }
 .work__info{
 	display: flex;
@@ -77,6 +83,27 @@ body{
 	font-size: 18px;
 	font-weight: bold;
 }
+.work__info p{
+	width: 55%;
+	text-align: center;
+	margin: 0;
+}
+.work__info img{
+	height: 100%;
+	width: 100%;
+	display: none;
+	min-width: 100%;
+	min-height: 100%;
+}
 .labs > div{
 	display: none;
+}
+.flex form, fieldset, textarea{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+a[src*='Картинки']{
+	height: 50px;
+	max-height: 50%;
 }
