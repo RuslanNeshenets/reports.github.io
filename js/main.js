@@ -15,13 +15,14 @@ $(document).ready(function () {
 	});
 
 	//Лаб №1
-	$('.work__structure__1 a:nth-child(n+2)').click(function(event){
-		let text = $(this).children().html();
-		let img = $(this).children('img').attr('src');
-		$('.work__info').html(`${text}<img src="${img}">`);
-		if($('.work__info img').attr('src') != 'undefined'
-			&& $('.work__info img').attr('src').length != 0){
-			$('.work__info img').show();
-		}
+	$('.work__structure__1 div').click(function(event){
+		let div = $(this).clone();
+		div.contents().filter(function(){
+		    return (this.nodeType == 3);
+		}).remove();
+		let text = div.html();
+		console.log(text);
+		$('.work__info').html(text);
+		$('.work__info img').show();
 	});
 });
