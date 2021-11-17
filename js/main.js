@@ -21,7 +21,6 @@ $(document).ready(function () {
 		    return (this.nodeType == 3);
 		}).remove();
 		let text = div.html();
-		console.log(text);
 		$('.work__info').html(text);
 		$('.work__info img').show();
 	});

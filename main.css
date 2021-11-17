@@ -88,7 +88,7 @@ body{
 	display: flex;
 	flex-wrap: wrap;
 	width: 75%;
-	border: 2px solid #000;
+	/*border: 2px solid #000;*/
 	align-items: center;
 	justify-content: center;
 	font-size: 18px;
@@ -98,13 +98,12 @@ body{
 	text-align: center;
 	margin: 0;
 	padding: 20px;
+	width: 100%;
 }
 .work__info img{
-	/*height: 100%;*/
-	width: 100%;
+	/*width: 100%;*/
 	display: none;
-	min-width: 100%;
-	min-height: 100%;
+	max-width: 100%;
 }
 .work__info a{
 	display: block;
